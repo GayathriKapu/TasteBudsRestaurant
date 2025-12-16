@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenLeaf Caesar Haven</title>
+  <link rel="stylesheet" href="CaesarSalad.css">
+  <script src="CaesarSalad.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🥗 GreenLeaf Caesar Haven</h1>
+    <p>Fresh. Crunchy. Wholesome.</p>
+  </header>
+
+  <section>
+    <div class="offer">
+      <h2>🌟 Healthy Deal!</h2>
+      <p>Enjoy <b>15% OFF</b> on orders above $20</p>
+    </div>
+
+    <h2 class="menu-title">Our Caesar Salad Collection</h2>
+
+    <div id="menu">
+      <div class="salad-card" data-price="7">
+        <img src="Classic Caesar Salad.jpg" alt="Classic Caesar Salad">
+        <div class="salad-info">
+          <h3>Classic Caesar Salad</h3>
+          <p>Romaine lettuce, Caesar dressing, croutons, and parmesan cheese.</p>
+          <h4>$7</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="salad-card" data-price="8">
+        <img src="Grilled Chicken Caesar.jpg" alt="Grilled Chicken Caesar">
+        <div class="salad-info">
+          <h3>Grilled Chicken Caesar</h3>
+          <p>Tender grilled chicken atop classic Caesar ingredients.</p>
+          <h4>$8</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="salad-card" data-price="9">
+        <img src="Shrimp Caesar Salad.jpg" alt="Shrimp Caesar Salad">
+        <div class="salad-info">
+          <h3>Shrimp Caesar Salad</h3>
+          <p>Juicy grilled shrimp mixed with crisp romaine and creamy dressing.</p>
+          <h4>$9</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="salad-card" data-price="6">
+        <img src="Garden Veggie Caesar.jpg" alt="Veggie Caesar Salad">
+        <div class="salad-info">
+          <h3>Garden Veggie Caesar</h3>
+          <p>A colorful blend of lettuce, cherry tomatoes, cucumbers, and dressing.</p>
+          <h4>$6</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="salad-card" data-price="10">
+        <img src="Avocado Caesar Salad.jpg" alt="Avocado Caesar Salad">
+        <div class="salad-info">
+          <h3>Avocado Caesar Salad</h3>
+          <p>Fresh avocados, lettuce, and parmesan tossed with a creamy Caesar dressing.</p>
+          <h4>$10</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="salad-card" data-price="8.5">
+        <img src="Spicy Caesar Crunch.jpg" alt="Spicy Caesar Salad">
+        <div class="salad-info">
+          <h3>Spicy Caesar Crunch</h3>
+          <p>Classic Caesar salad with jalapeños and spicy pepper dressing.</p>
+          <h4>$8.5</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="total">Total Price: $0.00</h1>
+  </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Paradise</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Paradise</h1>
+        <p>Delicious Pizza Delivered with Love</p>
+    </header>
+
+    <section>
+        <h2>🔥 Special Offer!</h2>
+        <p>Get 25% OFF on orders above $50</p>
+
+        <div id="menu">
+            <!-- Cheese Pizza -->
+            <div class="pizza-card" data-price="30">
+                <img src="Cheese Pizza.jpg" alt="Cheese Pizza">
+                <div class="pizza-info">
+                    <h3>Cheese Pizza</h3>
+                    <p>Thin crust pizza with extra mozzarella cheese.</p>
+                    <h4>Price: $30</h4>
+                    <label>Qty: <input type="number" min="1" placeholder="Qty" class="qty"></label>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Volcano Pizza -->
+            <div class="pizza-card" data-price="25">
+                <img src="volcano pizza.jpeg" alt="Volcano Pizza">
+                <div class="pizza-info">
+                    <h3>Volcano Pizza</h3>
+                    <p>Spicy pizza with jalapenos, chili flakes, and pepperoni.</p>
+                    <h4>Price: $25</h4>
+                    <label>Qty: <input type="number" min="1" placeholder="Qty" class="qty"></label>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Chicken Pizza -->
+            <div class="pizza-card" data-price="28">
+                <img src="./chickken pizza.jpg" alt="Chicken Pizza">
+                <div class="pizza-info">
+                    <h3>Chicken Pizza</h3>
+                    <p>Grilled chicken with onions, peppers, and cheese.</p>
+                    <h4>Price: $28</h4>
+                    <label>Qty: <input type="number" min="1" placeholder="Qty" class="qty"></label>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Margherita Pizza -->
+            <div class="pizza-card" data-price="22">
+                <img src="Margherita Pizza.jpg" alt="Margherita Pizza">
+                <div class="pizza-info">
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic pizza with fresh tomatoes, basil, and mozzarella.</p>
+                    <h4>Price: $22</h4>
+                    <label>Qty: <input type="number" min="1" placeholder="Qty" class="qty"></label>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Pepperoni Pizza -->
+            <div class="pizza-card" data-price="27">
+                <img src="Pepperoni Pizza.jpg" alt="Pepperoni Pizza">
+                <div class="pizza-info">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>Loaded with pepperoni slices and extra mozzarella cheese.</p>
+                    <h4>Price: $27</h4>
+                    <label>Qty: <input type="number" min="1" placeholder="Qty" class="qty"></label>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Veggie Pizza -->
+            <div class="pizza-card" data-price="24">
+                <img src="Veggie Pizza.jpg" alt="Veggie Pizza">
+                <div class="pizza-info">
+                    <h3>Veggie Pizza</h3>
+                    <p>Fresh vegetables with tomato sauce and mozzarella cheese.</p>
+                    <h4>Price: $24</h4>
+                    <label>Qty: <input type="number" min="1" placeholder="Qty" class="qty"></label>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="total">Total Price: $0</h2>
+    </section>
+
+    <script src="pizza.js"></script>
+</body>
+</html>

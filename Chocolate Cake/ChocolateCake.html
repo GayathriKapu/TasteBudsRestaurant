@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Heaven</title>
+  <link rel="stylesheet" href="ChocolateCake.css">
+  <script src="ChocolateCake.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🍫 Chocolate Heaven 🍰</h1>
+    <p>Where Every Slice Melts Your Heart</p>
+  </header>
+
+  <section class="offer">
+    <h2>✨ Special Offer ✨</h2>
+    <p>Buy 2 cakes and get 1 free! This weekend only 🍩</p>
+  </section>
+
+  <section class="menu">
+    <h2>Our Chocolate Cake Collection</h2>
+    <div class="cake-container">
+
+      <div class="cake-card" data-price="20">
+        <img src="Classic Chocolate Cake.jpg" alt="Classic Chocolate Cake">
+        <h3>Classic Chocolate Cake</h3>
+        <p>Rich dark chocolate layered with creamy frosting.</p>
+        <h4>$20</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty">
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="cake-card" data-price="25">
+        <img src="Chocolate Fudge Cake.jpg" alt="Chocolate Fudge Cake">
+        <h3>Chocolate Fudge Cake</h3>
+        <p>Moist, dense and perfectly fudgy for chocolate lovers.</p>
+        <h4>$25</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty">
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="cake-card" data-price="30">
+        <img src="Chocolate Mousse Cake.jpg" alt="Chocolate Mousse Cake">
+        <h3>Chocolate Mousse Cake</h3>
+        <p>Soft sponge filled with airy chocolate mousse cream.</p>
+        <h4>$30</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty">
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="cake-card" data-price="28">
+        <img src="Chocolate Truffle Cake.jpg" alt="Truffle Cake">
+        <h3>Chocolate Truffle Cake</h3>
+        <p>Luxury dark chocolate truffle layered to perfection.</p>
+        <h4>$28</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty">
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="cake-card" data-price="18">
+        <img src="Chocolate Berry Cake.jpg" alt="Chocolate Berry Cake">
+        <h3>Chocolate Berry Cake</h3>
+        <p>Delicious combo of chocolate and fresh berries.</p>
+        <h4>$18</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty">
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+    </div>
+
+    <h2 id="total">Total Price: $0.00</h2>
+  </section>
+
+  <footer>
+    <p>© 2025 Chocolate Heaven | Crafted with 🍫 & ❤️ by Gayathri</p>
+  </footer>
+</body>
+</html>

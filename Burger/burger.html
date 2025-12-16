@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burger Paradise</title>
+  <link rel="stylesheet" href="./burger.css" />
+  <script src="./burger.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🍔 Burger King</h1>
+    <p>Juicy Burgers, Hot & Fresh!</p>
+  </header>
+
+  <section id="offers">
+    <h2>🔥 Special Combo Offer!</h2>
+    <p>Buy 2 Burgers & Get 1 Free 🍟</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Burger Menu</h2>
+    <div class="burger-container">
+
+      <div class="burger-card" data-price="8">
+        <img src="Classic burger.jpg" alt="Classic Burger">
+        <h3>Classic Burger</h3>
+        <p>Price: $8</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="burger-card" data-price="10">
+        <img src="Cheese Burger.jpg" alt="Cheese Burger">
+        <h3>Cheese Burger</h3>
+        <p>Price: $10</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="burger-card" data-price="12">
+        <img src="Chicken burger.jpg" alt="Chicken Burger">
+        <h3>Chicken Burger</h3>
+        <p>Price: $12</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="burger-card" data-price="15">
+        <img src="Double Patty Burger.jpg" alt="Double Patty Burger">
+        <h3>Double Patty Burger</h3>
+        <p>Price: $15</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="burger-card" data-price="9">
+        <img src="Veggie Burger.jpg" alt="Veggie Burger">
+        <h3>Veggie Burger</h3>
+        <p>Price: $9</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="total">Total Price: $0</h2>
+  </section>
+
+  <footer>
+    <p>© 2025 Burger Paradise | Freshly Made, Always Delicious!</p>
+  </footer>
+</body>
+</html>

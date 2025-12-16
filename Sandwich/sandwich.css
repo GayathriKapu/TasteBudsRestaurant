@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff9f3;
+  color: #333;
+}
+
+header {
+  background-color: #f39c12;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 48px;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.offer {
+  background: #ffe3b3;
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.menu-title {
+  margin-top: 40px;
+  font-size: 32px;
+  color: #f57c00;
+  margin-bottom: 30px;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.sandwich-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.sandwich-card:hover {
+  transform: translateY(-8px);
+}
+
+.sandwich-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.sandwich-info {
+  padding: 15px;
+}
+
+.sandwich-info h3 {
+  color: #f57c00;
+  font-size: 20px;
+}
+
+.sandwich-info p {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.sandwich-info h4 {
+  font-size: 16px;
+  color: #d35400;
+  margin: 10px 0;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button {
+  background-color: #f57c00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e96e00;
+}
+
+#total {
+  margin-top: 50px;
+  color: #d35400;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 36px;
+  }
+
+  #menu {
+    grid-template-columns: 1fr;
+  }
+
+  .sandwich-card {
+    max-width: 90%;
+    margin: auto;
+  }
+}

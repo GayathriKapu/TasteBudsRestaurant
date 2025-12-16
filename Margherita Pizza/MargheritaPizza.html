@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Margherita Magic</title>
+  <link rel="stylesheet" href="MargheritaPizza.css" />
+  <script src="MargheritaPizza.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🍕 Margherita Magic 🍃</h1>
+    <p>Classic. Fresh. Irresistible. Made with love and mozzarella.</p>
+  </header>
+
+  <section class="offer">
+    <h2>🔥 Special Deal 🔥</h2>
+    <p>Order 2 Large Margheritas and get a Garlic Bread Free!</p>
+  </section>
+
+  <section class="menu">
+    <h2>Our Margherita Collection</h2>
+    <div class="pizza-container">
+      <div class="pizza-card" data-price="12">
+        <img src="Classic Margherita.jpg" alt="Classic Margherita" />
+        <h3>Classic Margherita</h3>
+        <p>Fresh tomato sauce, mozzarella, and basil leaves.</p>
+        <h4>$12</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card" data-price="15">
+        <img src="Double Cheese Margherita.jpg" alt="Double Cheese" />
+        <h3>Double Cheese Margherita</h3>
+        <p>Extra mozzarella for double the cheesy magic.</p>
+        <h4>$15</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card" data-price="18">
+        <img src="Spicy Margherita.jpg" alt="Spicy Margherita" />
+        <h3>Spicy Margherita</h3>
+        <p>Classic taste with a hint of chili flakes and oregano.</p>
+        <h4>$18</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card" data-price="20">
+        <img src="Italian Herb Margherita.jpg" alt="Italian Herb Margherita" />
+        <h3>Italian Herb Margherita</h3>
+        <p>Infused with authentic Italian herbs and olive oil drizzle.</p>
+        <h4>$20</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="pizza-card" data-price="22">
+        <img src="Premium Margherita.jpg" alt="Premium Margherita" />
+        <h3>Premium Margherita</h3>
+        <p>Premium buffalo mozzarella with fresh basil and tomato confit.</p>
+        <h4>$22</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2 id="total">Total Price: $0.00</h2>
+  </section>
+
+  <footer>
+    <p>© 2025 Margherita Magic | Crafted with ❤️ by Gayathri</p>
+  </footer>
+</body>
+</html>

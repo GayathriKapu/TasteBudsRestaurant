@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beef Taco Fiesta</title>
+  <link rel="stylesheet" href="BeefTacos.css" />
+  <script src="BeefTacos.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🌮 Beef Taco Fiesta 🌶️</h1>
+    <p>Authentic Mexican Tacos – Fresh, Spicy & Irresistible!</p>
+  </header>
+
+  <section class="offer">
+    <h2>🔥 Special Fiesta Offer 🔥</h2>
+    <p>Buy 3 Beef Tacos and get 1 Free Drink! 💥</p>
+  </section>
+
+  <section class="menu">
+    <h2>Our Taco Selections</h2>
+    <div class="taco-container">
+      <div class="taco-card" data-price="10">
+        <img src="Classic Beef Taco.jpg" alt="Classic Beef Taco" />
+        <h3>Classic Beef Taco</h3>
+        <p>Soft tortilla filled with seasoned beef, cheese & salsa.</p>
+        <h4>$10</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="taco-card" data-price="12">
+        <img src="Spicy Beef Taco.jpg" alt="Spicy Beef Taco" />
+        <h3>Spicy Beef Taco</h3>
+        <p>Loaded with jalapeños, chili flakes, and a fiery sauce.</p>
+        <h4>$12</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="taco-card" data-price="15">
+        <img src="Cheesy Beef Taco.jpg" alt="Cheesy Beef Taco" />
+        <h3>Cheesy Beef Taco</h3>
+        <p>Melted cheddar with juicy beef and creamy sauce.</p>
+        <h4>$15</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="taco-card" data-price="13">
+        <img src="Grilled Beef Taco.jpg" alt="Grilled Beef Taco" />
+        <h3>Grilled Beef Taco</h3>
+        <p>Smoky grilled beef with lettuce and avocado slices.</p>
+        <h4>$13</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+
+      <div class="taco-card" data-price="18">
+        <img src="Mexican Fiesta Taco.jpg" alt="Mexican Beef Taco" />
+        <h3>Mexican Fiesta Taco</h3>
+        <p>Authentic Mexican style with beans, guacamole & salsa roja.</p>
+        <h4>$18</h4>
+        <input type="number" min="1" placeholder="Qty" class="qty" />
+        <button onclick="addToCart(this)">Add to Cart</button>
+      </div>
+    </div>
+
+    <h2 id="total">Total Price: $0.00</h2>
+  </section>
+
+  <footer>
+    <p>© 2025 Beef Taco Fiesta 🌮 | Crafted with ❤️ by Gayathri</p>
+  </footer>
+</body>
+</html>

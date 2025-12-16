@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pasta Palace</title>
+  <link rel="stylesheet" href="./pasta.css" />
+  <script src="./pasta.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🍝 Pasta Palace</h1>
+    <p>Where Every Bite Feels Like Italy 🇮🇹</p>
+  </header>
+
+  <section id="offers">
+    <h2>✨ Special Offer!</h2>
+    <p>Buy 3 Pastas & Get Garlic Bread Free 🥖</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Pasta Menu</h2>
+    <div class="pasta-container">
+
+      <div class="pasta-card" data-price="10">
+        <img src="Alfredo Pasta.jpg" alt="Alfredo Pasta">
+        <h3>Alfredo Pasta</h3>
+        <p>Price: $10</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="pasta-card" data-price="12">
+        <img src="Arrabbiata Pasta.jpg" alt="Arrabbiata Pasta">
+        <h3>Arrabbiata Pasta</h3>
+        <p>Price: $12</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="pasta-card" data-price="11">
+        <img src="Pesto Pasta.jpg" alt="Pesto Pasta">
+        <h3>Pesto Pasta</h3>
+        <p>Price: $11</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="pasta-card" data-price="14">
+        <img src="Carbonara Pasta.jpeg" alt="Carbonara Pasta">
+        <h3>Carbonara Pasta</h3>
+        <p>Price: $14</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+      <div class="pasta-card" data-price="9">
+        <img src="Veggie Delight Pasta.jpg" alt="Veggie Delight Pasta">
+        <h3>Veggie Delight Pasta</h3>
+        <p>Price: $9</p>
+        <button class="add-btn">Add to Cart</button>
+        <div class="quantity-controls hidden">
+          <button class="decrease">-</button>
+          <span class="quantity">0</span>
+          <button class="increase">+</button>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 id="total">Total Price: $0</h2>
+  </section>
+
+  <footer>
+    <p>© 2025 Pasta Palace | Crafted with Love & Parmesan 🧀</p>
+  </footer>
+</body>
+</html>

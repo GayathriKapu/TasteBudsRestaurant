@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandwich Delight</title>
+  <link rel="stylesheet" href="sandwich.css">
+  <script src="sandwich.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🥪 Sandwich Delight</h1>
+    <p>Fresh, flavorful, and made with love!</p>
+  </header>
+
+  <section>
+    <div class="offer">
+      <h2>🌟 Special Offer!</h2>
+      <p>Get <b>20% OFF</b> on orders above $25</p>
+    </div>
+
+    <h2 class="menu-title">Our Sandwich Collection</h2>
+
+    <div id="menu">
+      <div class="sandwich-card" data-price="8">
+        <img src="Classic Club Sandwich.jpg" alt="Club Sandwich">
+        <div class="sandwich-info">
+          <h3>Classic Club Sandwich</h3>
+          <p>Triple-layered sandwich with grilled chicken, lettuce, and mayo.</p>
+          <h4>$8</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sandwich-card" data-price="6">
+        <img src="Garden Veggie Sandwich.jpg" alt="Veggie Sandwich">
+        <div class="sandwich-info">
+          <h3>Garden Veggie Sandwich</h3>
+          <p>Loaded with fresh veggies, cheese, and homemade dressing.</p>
+          <h4>$6</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sandwich-card" data-price="9">
+        <img src="Tuna Melt Sandwich.jpg" alt="Tuna Sandwich">
+        <div class="sandwich-info">
+          <h3>Tuna Melt Sandwich</h3>
+          <p>Creamy tuna mix topped with melted cheese and toasted perfectly.</p>
+          <h4>$9</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sandwich-card" data-price="7">
+        <img src="Egg & Cheese Sandwich.jpg" alt="Egg Sandwich">
+        <div class="sandwich-info">
+          <h3>Egg & Cheese Sandwich</h3>
+          <p>Fluffy scrambled eggs layered with cheddar cheese on toasted bread.</p>
+          <h4>$7</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="sandwich-card" data-price="10">
+        <img src="Grilled Chicken Sandwich.jpg" alt="Grilled Sandwich">
+        <div class="sandwich-info">
+          <h3>Grilled Chicken Sandwich</h3>
+          <p>Juicy grilled chicken breast with veggies and tangy sauces.</p>
+          <h4>$10</h4>
+          <div class="actions">
+            <input type="number" min="1" placeholder="Qty" class="qty">
+            <button onclick="addToCart(this)">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="total">Total Price: $0.00</h1>
+  </section>
+</body>
+</html>
